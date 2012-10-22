@@ -1,0 +1,1 @@
+SUBDIRS=libmachine include exampleProgram
