@@ -10,6 +10,8 @@
 #include "target.h"
 typedef struct __tagCallBack{
 	void (*OnRespond)(Message* msg,Target* target);
+	void (*OnErrorOccur)(int err,Target* target);
 	void (*OnTargetRegirsted)(Target* target);
+	void (*OnTargetUnRegirsted)(const Target* target);
 }CallBack;
 #endif /* CALLBACK_H_ */

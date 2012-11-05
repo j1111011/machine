@@ -1,0 +1,3 @@
+libmachine_la-target.lo: target.c ../include/target.h
+
+../include/target.h:

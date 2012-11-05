@@ -14,10 +14,12 @@
  */
 
 #include "machine.h"
-
 int main(void) {
-  Message msg;
+  Message* msg = AllocMessage(10240);
   Target target;
-  Request(&msg,&target);
+  target.protocol = SOCKET_PROTOCOL;
+  RegirstTarget(&target);
+  memcpy(msg->buffer,"hello world",11);
+  Request(msg,&target);
   return 0;
 }

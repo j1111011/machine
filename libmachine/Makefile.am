@@ -8,7 +8,8 @@ lib_LTLIBRARIES = libmachine.la
 # Build information for each library
 
 # Sources for libmachine
-libmachine_la_SOURCES = machine.c
+libmachine_la_SOURCES = machine.c message.c target.c event.c
+# dsl_list.c int_dsl_list.c
 
 # Linker options libTestProgram
 libmachine_la_LDFLAGS = 
